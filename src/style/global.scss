@@ -1,0 +1,62 @@
+// Display-custom
+@mixin display($d, $jc, $ai) {
+  display: $d;
+  justify-content: $jc;
+  align-items: $ai;
+}
+// Display-flex-center
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Position-custom
+@mixin position($p, $t, $r, $b, $l, $zi) {
+  position: $p;
+  top: $t;
+  right: $r;
+  bottom: $b;
+  left: $l;
+  z-index: $zi;
+}
+// Position-fixed
+@mixin fixed-full {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+// Scrollbar
+@mixin scrollbar-small {
+  overflow: auto;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    /* 滚动条整体样式 */
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    /* 滚动条里面小方块样式 */
+    border-radius: 100px;
+    background-color: #6cb3d4;
+  }
+  &::-webkit-scrollbar-track {
+    /* 滚动条里面轨道样式 */
+    background-color: #ffffff;
+  }
+}
+
+@mixin scrollbar-none {
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+// Transition
+@mixin transition-5 {
+  transition-property: all;
+  transition-duration: 0.5s;
+}
