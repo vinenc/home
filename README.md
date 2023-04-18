@@ -1,7 +1,39 @@
-# Vue 3 + Vite
+# Home
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+> 声明：此项目只发布于 Github，基于 MIT 协议，免费且作为开源学习使用。
 
-## Recommended IDE Setup
+### 介绍
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+本项目为个人开发的开源浏览器主页，基于 **Vue3 + Vite + Element Plus**
+
+Demo展示：https://home.waowaowao.cn
+
+### 项目搭建
+
+进入文件目录，**安装依赖**
+
+```shell
+npm install
+```
+
+**运行**
+
+```shell
+npm run dev
+```
+
+**项目打包**
+
+```shell
+npm run build
+```
+
+### Demo展示
+
+1. 自定义修改页面样式以及样式复原：
+
+![](.\img\a.png)
+
+2. 功能图标，实现拖拽、添加、删除和复原：
+
+![](.\img\b.png)
